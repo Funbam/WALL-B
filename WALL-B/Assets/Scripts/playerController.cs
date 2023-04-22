@@ -20,6 +20,7 @@ public class playerController : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] GameObject smoke;
     [SerializeField] GameObject thrusterSmoke;
+    [SerializeField] GameObject bonkEffect;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -80,6 +81,7 @@ public class playerController : MonoBehaviour
     {
         isBigThrust = true;
         jumpsLeft = maxJumps;
+        Instantiate(bonkEffect, transform.position, Random.rotation);
     }
 
     public void resetJumps()
