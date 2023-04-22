@@ -7,6 +7,9 @@ public class playerController : MonoBehaviour
 {
     public int maxJumps;
 
+    [Header("UI")]
+    [SerializeField] private GameObject thruster;
+
     [Header("Transforms")]
     [SerializeField] Transform rightForceThruster;
     [SerializeField] Transform leftForceThruster;
@@ -60,6 +63,10 @@ public class playerController : MonoBehaviour
         {
             character.AddForce(character.transform.up * bottomThrusterForce, ForceMode2D.Impulse);
             jumpsLeft--;
+            if (jumpsLeft<=0)
+            {
+                thruster.SetActive(false);
+            }
             Instantiate(smoke, smokeSpawn.position, Random.rotation);
         }
 
@@ -84,6 +91,7 @@ public class playerController : MonoBehaviour
         if (!isBigThrust && timeElapsed >= 0.5f)
         {
             isBigThrust = true;
+            thruster.SetActive(true);
         }
 
     }
@@ -92,11 +100,13 @@ public class playerController : MonoBehaviour
     {
         isBigThrust = true;
         jumpsLeft = maxJumps;
+        thruster.SetActive(true);
         Instantiate(bonkEffect, transform.position, Random.rotation);
     }
 
     public void resetJumps()
     {
         jumpsLeft = maxJumps;
+        thruster.SetActive(true);
     }
 }
