@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class playerController : MonoBehaviour
@@ -18,9 +19,10 @@ public class playerController : MonoBehaviour
     [SerializeField] float bigSideThrusterForce;
 
     [Header("Prefabs")]
-    [SerializeField] GameObject smoke;
-    [SerializeField] GameObject thrusterSmoke;
-    [SerializeField] GameObject bonkEffect;
+    [SerializeField] private GameObject smoke;
+    [SerializeField] private GameObject thrusterSmoke;
+    [SerializeField] private GameObject bonkEffect;
+    [SerializeField] private GameObject deathEffect;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -57,6 +59,13 @@ public class playerController : MonoBehaviour
             character.AddForce(character.transform.up * bottomThrusterForce, ForceMode2D.Impulse);
             jumpsLeft--;
             Instantiate(smoke, smokeSpawn.position, Random.rotation);
+        }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            RespawnManager.Instance.StartRespawn();
         }
 
         //Deal with being stuck

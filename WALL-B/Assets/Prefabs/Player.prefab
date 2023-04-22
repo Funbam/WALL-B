@@ -275,6 +275,7 @@ MonoBehaviour:
   smoke: {fileID: 5481801173935208294, guid: 970a87ca3b74040499b341e6931b620f, type: 3}
   thrusterSmoke: {fileID: 5481801173935208294, guid: fd5427f74adb9f347ae2968121e8a38d, type: 3}
   bonkEffect: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
+  deathEffect: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
 --- !u!1 &3085010729169138385
 GameObject:
   m_ObjectHideFlags: 0
