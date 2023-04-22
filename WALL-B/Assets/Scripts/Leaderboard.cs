@@ -22,10 +22,11 @@ public class Leaderboard : MonoBehaviour
             int loopLen = (msg.Length < names.Count) ? msg.Length : names.Count;
             for (int i = 0; i < loopLen; ++i)
             {
+                int revIndex = loopLen - 1 - i;
                 float min = Mathf.FloorToInt(msg[i].Score / 60);
                 float sec = Mathf.FloorToInt(msg[i].Score % 60);
-                scores[i].text = string.Format("{0:00} : {1:00}", min, sec);
-                names[i].text = msg[i].Username;
+                scores[revIndex].text = string.Format("{0:00} : {1:00}", min, sec);
+                names[revIndex].text = msg[i].Username;
             }
         }));
     }
