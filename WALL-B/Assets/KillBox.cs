@@ -23,7 +23,7 @@ public class KillBox : MonoBehaviour
         GameObject colObj = collision.gameObject;
         if(colObj.tag == playerTag)
         {
-            Instantiate(deathEffect, colObj.transform);
+            Instantiate(deathEffect, colObj.transform.position, Quaternion.identity);
             Destroy(colObj);
             RespawnManager.Instance.StartRespawn();
         }

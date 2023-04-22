@@ -14,6 +14,6 @@ public class Respawn : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        Instantiate(playerPrefab, spawnLocation);
+        Instantiate(playerPrefab, spawnLocation.position, Quaternion.identity);
     }
 }
