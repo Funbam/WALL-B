@@ -9,6 +9,7 @@ public class RoboSchmoovin : MonoBehaviour
     [SerializeField] private float distanceThreshold;
     private int waypointIndex;
     [SerializeField] private float moveSpeed;
+    private Coroutine movingCR = null;
 
     private enum States
     {
@@ -25,7 +26,7 @@ public class RoboSchmoovin : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= distanceThreshold)
+        if (Vector3.Distance(transform.position, RespawnManager.Instance.player.transform.position) <= distanceThreshold)
         {
             if(currentState == States.waiting && waypointIndex < waypoints.Count-1)
             {
@@ -36,7 +37,13 @@ public class RoboSchmoovin : MonoBehaviour
 
         if(currentState == States.moving)
         {
-            StartCoroutine(Move(waypoints[waypointIndex]));
+            
+            if (movingCR == null)
+            {
+                Debug.Log("AAAA");
+                movingCR = StartCoroutine(Move(waypoints[waypointIndex]));
+            }
+            
         }
 
 
@@ -51,5 +58,6 @@ public class RoboSchmoovin : MonoBehaviour
             yield return null;
         }
         currentState = States.waiting;
+        movingCR = null;
     }
 }

@@ -16,6 +16,7 @@ public class Respawn : MonoBehaviour
     public void RespawnPlayer()
     {
         GameObject go = Instantiate(playerPrefab, spawnLocation.position, Quaternion.identity);
+        RespawnManager.Instance.player = go;
         GameObject.FindGameObjectWithTag("camera").GetComponent<CinemachineVirtualCamera>().Follow = go.transform;
     }
 }
