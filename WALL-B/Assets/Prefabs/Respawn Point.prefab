@@ -369,4 +369,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 3085010728605476878, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}
+  activateEffect: {fileID: 1995403933065894, guid: 4961a16ba01e09547be3e1c9d16d5ad0, type: 3}
   spawnLocation: {fileID: 8654147363112860909}
