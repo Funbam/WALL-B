@@ -7,6 +7,7 @@ public class RespawnManager : MonoBehaviour
     public static RespawnManager Instance { get; private set; }
     public Respawn currentRespawn;
     [SerializeField] private float respawnDelay;
+    public GameObject player;
     private void Awake()
     {
         if (Instance != null && Instance != this)
