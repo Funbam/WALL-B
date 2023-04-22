@@ -257,6 +257,13 @@ MonoBehaviour:
   thrusterSmoke: {fileID: 5481801173935208294, guid: fd5427f74adb9f347ae2968121e8a38d, type: 3}
   bonkEffect: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}
   deathEffect: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
+  thrustAudio:
+    Guid:
+      Data1: 1091423500
+      Data2: 1175145502
+      Data3: -822021487
+      Data4: -1042318156
+    Path: event:/Thrust
 --- !u!60 &5502747933866828187
 PolygonCollider2D:
   m_ObjectHideFlags: 0
