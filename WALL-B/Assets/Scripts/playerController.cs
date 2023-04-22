@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
     public int maxJumps;
 
     [Header("Transforms")]
+    [SerializeField] Transform rightForceThruster;
+    [SerializeField] Transform leftForceThruster;
     [SerializeField] Transform rightThruster;
     [SerializeField] Transform leftThruster;
     [SerializeField] Transform smokeSpawn;
@@ -44,13 +46,13 @@ public class playerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            character.AddForceAtPosition(character.transform.right * (isBigThrust? bigSideThrusterForce : sideThrusterForce), leftThruster.position, ForceMode2D.Impulse);
+            character.AddForceAtPosition(character.transform.right * (isBigThrust? bigSideThrusterForce : sideThrusterForce), leftForceThruster.position, ForceMode2D.Impulse);
             Instantiate(thrusterSmoke, leftThruster.position, Random.rotation);
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightThruster.position, ForceMode2D.Impulse);
+            character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightForceThruster.position, ForceMode2D.Impulse);
             Instantiate(thrusterSmoke, rightThruster.position, Random.rotation);
         }
 
