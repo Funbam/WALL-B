@@ -265,14 +265,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxJumps: 1
-  rightThruster: {fileID: 3085010730087985852}
-  leftThruster: {fileID: 3085010729169138384}
+  rightThruster: {fileID: 3085010729169138384}
+  leftThruster: {fileID: 3085010730087985852}
   smokeSpawn: {fileID: 3085010728187835238}
   character: {fileID: 3085010728605476875}
   sideThrusterForce: 0.01
   bottomThrusterForce: 10
   bigSideThrusterForce: 1
   smoke: {fileID: 5481801173935208294, guid: 970a87ca3b74040499b341e6931b620f, type: 3}
+  thrusterSmoke: {fileID: 5481801173935208294, guid: fd5427f74adb9f347ae2968121e8a38d, type: 3}
 --- !u!1 &3085010729169138385
 GameObject:
   m_ObjectHideFlags: 0

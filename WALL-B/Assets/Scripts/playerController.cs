@@ -5,16 +5,21 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     public int maxJumps;
-    
+
+    [Header("Transforms")]
     [SerializeField] Transform rightThruster;
     [SerializeField] Transform leftThruster;
     [SerializeField] Transform smokeSpawn;
     [SerializeField] Rigidbody2D character;
+
+    [Header("Values")]
     [SerializeField] float sideThrusterForce;
     [SerializeField] float bottomThrusterForce;
     [SerializeField] float bigSideThrusterForce;
 
+    [Header("Prefabs")]
     [SerializeField] GameObject smoke;
+    [SerializeField] GameObject thrusterSmoke;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -37,11 +42,13 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             character.AddForceAtPosition(character.transform.right * (isBigThrust? bigSideThrusterForce : sideThrusterForce), leftThruster.position, ForceMode2D.Impulse);
+            Instantiate(thrusterSmoke, leftThruster.position, Random.rotation);
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightThruster.position, ForceMode2D.Impulse);
+            Instantiate(thrusterSmoke, rightThruster.position, Random.rotation);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
