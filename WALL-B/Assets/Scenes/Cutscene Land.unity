@@ -46971,18 +46971,6 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16915
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.16915
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.16915
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.23
       objectReference: {fileID: 0}
@@ -47031,14 +47019,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1912522707}
     - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1912522708}
@@ -47050,42 +47030,6 @@ PrefabInstance:
       propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1268061724565499735}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: DisableMovement
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: playerController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Size.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Size.y
-      value: 12.571085
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.2144578
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 13.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636028, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_Name
       value: Funni Robot
@@ -47094,14 +47038,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4271989161293154143}
-    - target: {fileID: 7603750763076636029, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: moveSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636029, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: waypoints.Array.size
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636029, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -47138,54 +47074,8 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[8]
       value: 
       objectReference: {fileID: 181252270}
-    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Size.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Size.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 13.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603750763076636031, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e5ef08dd5d34f694fbbee954c1a932f9, type: 3}
-    m_RemovedComponents:
-    - {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
---- !u!1 &2139413399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7603750763076636028, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
-  m_PrefabInstance: {fileID: 2139413398}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2139413400
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139413399}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 914789cc1a0716f4caab4b16f1658741, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2141242381
 GameObject:
   m_ObjectHideFlags: 0
@@ -47277,10 +47167,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: FinalGoal
-      value: 
-      objectReference: {fileID: 737985323}
     - target: {fileID: 2852699306316339870, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}
       propertyPath: m_IsActive
       value: 1
