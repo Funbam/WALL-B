@@ -6,13 +6,13 @@ using UnityEngine.Windows.WebCam;
 
 public class TabCam : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera tabCam;
+    [SerializeField] public CinemachineVirtualCamera tabCam;
     [SerializeField] FMODUnity.EventReference tabIn;
     [SerializeField] FMODUnity.EventReference tabOut;
 
-    private int currentPriority = -1;
+    public int currentPriority = -1;
 
-    private void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
