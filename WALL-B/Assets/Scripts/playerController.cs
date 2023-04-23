@@ -39,8 +39,12 @@ public class playerController : MonoBehaviour
     [SerializeField] private FMODUnity.EventReference fallAudio;
     [SerializeField] private FMODUnity.EventReference deathAudio;
 
+    [Header("Tab Cam")]
+    [SerializeField] private GameObject isHere;
+
     private bool isBigThrust;
     private bool canMove = true;
+    private bool youareHere = false;
     private Vector3 oldPosition;
     private float timeElapsed;
     private int jumpsLeft;
@@ -51,6 +55,7 @@ public class playerController : MonoBehaviour
         isBigThrust = false;
         timeElapsed = 0;
         jumpsLeft = maxJumps;
+        isHere.SetActive(youareHere);
 
     }
 
@@ -100,7 +105,14 @@ public class playerController : MonoBehaviour
             RespawnManager.Instance.StartRespawn();
         }
 
-        //Deal with being stuck
+        //Do tab cam
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            youareHere = !youareHere;
+            isHere.SetActive(youareHere);
+        }
+
+            //Deal with being stuck
         if (Mathf.Approximately(transform.position.x, oldPosition.x) && Mathf.Approximately(transform.position.y, oldPosition.y))
         {
             timeElapsed += Time.deltaTime;
