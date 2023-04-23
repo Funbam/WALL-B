@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class RoboSchmoovin : MonoBehaviour
 {
+    private Animator animator;
     [SerializeField] private List<Transform> waypoints;
     [SerializeField] private Transform player;
     [SerializeField] private float distanceThreshold;
@@ -19,6 +21,11 @@ public class RoboSchmoovin : MonoBehaviour
 
     private States currentState = States.waiting;
 
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Start()
     {
         transform.position = waypoints[0].position;
@@ -32,6 +39,7 @@ public class RoboSchmoovin : MonoBehaviour
             {
                 waypointIndex++;
                 currentState = States.moving;
+                animator.SetTrigger("FMove");
             }
         }
 
@@ -58,6 +66,7 @@ public class RoboSchmoovin : MonoBehaviour
             yield return null;
         }
         currentState = States.waiting;
+        animator.SetTrigger("FIdle");
         movingCR = null;
     }
 }

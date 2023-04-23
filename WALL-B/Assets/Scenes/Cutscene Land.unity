@@ -46971,6 +46971,10 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.16915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.23
       objectReference: {fileID: 0}
@@ -47038,6 +47042,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4271989161293154143}
+    - target: {fileID: 7603750763076636029, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636029, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
