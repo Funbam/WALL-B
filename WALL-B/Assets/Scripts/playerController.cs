@@ -29,9 +29,13 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject bonkEffect;
     [SerializeField] private GameObject deathEffect;
 
+    [Header("animators")]
+    [SerializeField] private Animator leftAni;
+
     [Header("Audio")]
     [SerializeField] private FMODUnity.EventReference thrustAudio;
     [SerializeField] private FMODUnity.EventReference fallAudio;
+    [SerializeField] private FMODUnity.EventReference deathAudio;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -56,6 +60,7 @@ public class playerController : MonoBehaviour
             character.AddForceAtPosition(character.transform.right * (isBigThrust? bigSideThrusterForce : sideThrusterForce), leftForceThruster.position, ForceMode2D.Impulse);
             Instantiate(thrusterSmoke, leftThruster.position, Random.rotation);
             FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
+            leftAni.SetTrigger("fire");
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -81,6 +86,7 @@ public class playerController : MonoBehaviour
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot(deathAudio);
             RespawnManager.Instance.StartRespawn();
         }
 
