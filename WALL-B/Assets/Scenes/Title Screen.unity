@@ -11209,7 +11209,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ryan Ngoon - Programming and Level Design
+  m_text: 'Ryan Ngoon - Programming and Level Design
+
+
+    Funbam (Brendon Mye) -
+    Programmer
+
+
+    Britney Phan - Background/prop artist (and dewdrop robot thing)
+
+
+    baykidrizzle
+    - Character artist, final cutscene (if finished)
+
+
+    zholuarts - Background/prop
+    artist'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c54c72c5cfdaeb6439c1e3296cb3e93f, type: 2}
   m_sharedMaterial: {fileID: 8487611116203169970, guid: c54c72c5cfdaeb6439c1e3296cb3e93f, type: 2}
@@ -11236,8 +11251,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16478,8 +16493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24.795532, y: -82.11087}
-  m_SizeDelta: {x: 281.671, y: 368.2523}
+  m_AnchoredPosition: {x: 24.795532, y: -29.228088}
+  m_SizeDelta: {x: 281.671, y: 421.135}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1280223795
 MonoBehaviour:
@@ -19068,8 +19083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24.795532, y: -82.11087}
-  m_SizeDelta: {x: 281.671, y: 368.2523}
+  m_AnchoredPosition: {x: 24.795532, y: -31.872208}
+  m_SizeDelta: {x: 281.671, y: 418.4909}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1459391124
 MonoBehaviour:
