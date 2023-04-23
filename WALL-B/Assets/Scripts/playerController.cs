@@ -37,6 +37,7 @@ public class playerController : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private FMODUnity.EventReference thrustAudio;
     [SerializeField] private FMODUnity.EventReference fallAudio;
+    [SerializeField] private FMODUnity.EventReference deathAudio;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -89,6 +90,7 @@ public class playerController : MonoBehaviour
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot(deathAudio);
             RespawnManager.Instance.StartRespawn();
         }
 
