@@ -7,6 +7,8 @@ using UnityEngine.Windows.WebCam;
 public class TabCam : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera tabCam;
+    [SerializeField] FMODUnity.EventReference tabIn;
+    [SerializeField] FMODUnity.EventReference tabOut;
 
     private int currentPriority = -1;
 
@@ -17,10 +19,12 @@ public class TabCam : MonoBehaviour
             if (currentPriority == -1)
             {
                 currentPriority = 100;
+                FMODUnity.RuntimeManager.PlayOneShot(tabIn);
             }
             else
             {
                 currentPriority = -1;
+                FMODUnity.RuntimeManager.PlayOneShot(tabOut);
             }
 
             tabCam.Priority = currentPriority;

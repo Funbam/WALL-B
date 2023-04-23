@@ -59462,9 +59462,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabIn.Path
+      value: event:/Tab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabOut.Path
+      value: event:/Tab2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabIn.Guid.Data1
+      value: 1820961948
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabIn.Guid.Data2
+      value: 1131426255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabIn.Guid.Data3
+      value: 611654026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabIn.Guid.Data4
+      value: -1152663037
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabOut.Guid.Data1
+      value: 256536119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabOut.Guid.Data2
+      value: 1170408913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabOut.Guid.Data3
+      value: 779066276
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: tabOut.Guid.Data4
+      value: -1448641729
+      objectReference: {fileID: 0}
     - target: {fileID: 1593936327523084583, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
       propertyPath: m_Name
       value: Camera Stuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205977058142726318, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: m_Priority
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205977058142726318, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5873677939273594496, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
       propertyPath: m_Follow
