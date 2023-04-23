@@ -8,6 +8,9 @@ public class Yeet : MonoBehaviour
     [SerializeField] private float yeetInterval;
     [SerializeField] private float discreteMod;
     [SerializeField] private Rigidbody2D player;
+    [SerializeField] private GameObject bonkEffect;
+
+    [SerializeField] private FMODUnity.EventReference fallAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +18,12 @@ public class Yeet : MonoBehaviour
         StartCoroutine(YeetRoutine());
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot(fallAudio);
+        Instantiate(bonkEffect, transform.position, Random.rotation);
     }
+
 
     private IEnumerator YeetRoutine()
     {
