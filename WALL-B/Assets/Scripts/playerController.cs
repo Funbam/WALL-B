@@ -41,6 +41,7 @@ public class playerController : MonoBehaviour
 
     [Header("Tab Cam")]
     [SerializeField] private GameObject isHere;
+    [SerializeField] private GameObject cameraOverlay;
 
     private bool isBigThrust;
     private bool canMove = true;
@@ -110,6 +111,7 @@ public class playerController : MonoBehaviour
         {
             youareHere = !youareHere;
             isHere.SetActive(youareHere);
+            cameraOverlay.SetActive(youareHere);
         }
 
             //Deal with being stuck
