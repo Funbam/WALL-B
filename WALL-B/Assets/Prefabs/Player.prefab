@@ -264,6 +264,13 @@ MonoBehaviour:
       Data3: -822021487
       Data4: -1042318156
     Path: event:/Thrust
+  fallAudio:
+    Guid:
+      Data1: -707496159
+      Data2: 1300816633
+      Data3: 1675311753
+      Data4: 655876171
+    Path: event:/Falling
 --- !u!60 &5502747933866828187
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -31,6 +31,7 @@ public class playerController : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private FMODUnity.EventReference thrustAudio;
+    [SerializeField] private FMODUnity.EventReference fallAudio;
 
     private bool isBigThrust;
     private Vector3 oldPosition;
@@ -108,6 +109,7 @@ public class playerController : MonoBehaviour
         jumpsLeft = maxJumps;
         thruster.SetActive(true);
         Instantiate(bonkEffect, transform.position, Random.rotation);
+        FMODUnity.RuntimeManager.PlayOneShot(fallAudio);
     }
 
     public void resetJumps()
