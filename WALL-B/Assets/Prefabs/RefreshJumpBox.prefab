@@ -196,6 +196,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lightning
       objectReference: {fileID: 0}
+    - target: {fileID: 5338167386167562375, guid: 6ed54bc1bb1dc604a8fe6772e710941c, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5338167386167562375, guid: 6ed54bc1bb1dc604a8fe6772e710941c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1906596845
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ed54bc1bb1dc604a8fe6772e710941c, type: 3}
 --- !u!4 &2911031099582317081 stripped
