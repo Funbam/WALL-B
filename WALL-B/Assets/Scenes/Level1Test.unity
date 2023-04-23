@@ -8065,6 +8065,17 @@ Transform:
   m_Father: {fileID: 1171966145}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223497303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1385342724816329356, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+  m_PrefabInstance: {fileID: 1911252863}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64da18681f21474c8e2898ceb350938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223734341
 GameObject:
   m_ObjectHideFlags: 0
@@ -43597,26 +43608,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5873677940019783630, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
   m_PrefabInstance: {fileID: 1911252863}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1359873096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359873094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5015df6470f1cd84a8ceafc6c1219aaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distorition: {fileID: 737985324}
-  music:
-    Guid:
-      Data1: -928802856
-      Data2: 1175498570
-      Data3: 78926223
-      Data4: 526557434
-    Path: event:/Main Music
 --- !u!114 &1359873100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43648,6 +43639,27 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1359873105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5015df6470f1cd84a8ceafc6c1219aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TabCam: {fileID: 223497303}
+  distorition: {fileID: 737985324}
+  music:
+    Guid:
+      Data1: -928802856
+      Data2: 1175498570
+      Data3: 78926223
+      Data4: 526557434
+    Path: event:/Main Music
 --- !u!1 &1367233942
 GameObject:
   m_ObjectHideFlags: 0

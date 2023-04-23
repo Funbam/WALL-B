@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 8530227513779534819}
   - component: {fileID: 8182191186869573944}
   - component: {fileID: 4442406119884285373}
+  - component: {fileID: 2296044670460520464}
   m_Layer: 0
   m_Name: Funni Robot
   m_TagString: Untagged
@@ -394,6 +395,37 @@ MonoBehaviour:
       Data3: -740064119
       Data4: -347422165
     Path: event:/Win Jingle
+  Event: 
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2296044670460520464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7603750763076636028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -937605296
+      Data2: 1090616067
+      Data3: 1824690582
+      Data4: 1187925117
+    Path: event:/Yipee
   Event: 
   PlayEvent: 5
   StopEvent: 0
