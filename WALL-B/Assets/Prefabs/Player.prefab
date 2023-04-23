@@ -272,6 +272,13 @@ MonoBehaviour:
       Data3: 1675311753
       Data4: 655876171
     Path: event:/Falling
+  deathAudio:
+    Guid:
+      Data1: -1991380052
+      Data2: 1258666632
+      Data3: 1995816860
+      Data4: 1279411360
+    Path: event:/Exploding
 --- !u!60 &5502747933866828187
 PolygonCollider2D:
   m_ObjectHideFlags: 0
