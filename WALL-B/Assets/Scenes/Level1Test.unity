@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8625221, g: 0.6043748, b: 0.6107438, a: 1}
+  m_IndirectSpecularColor: {r: 0.8623694, g: 0.6043435, b: 0.6108113, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -43123,6 +43123,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 286627549120810449, guid: 41a33334d5306f24fb7280886ef15ff5, type: 3}
   m_PrefabInstance: {fileID: 1353822898}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1359873094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5873677940019783630, guid: 56ba9e247d8ab2548899216b58e72992, type: 3}
+  m_PrefabInstance: {fileID: 1911252863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1359873096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5015df6470f1cd84a8ceafc6c1219aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distorition: {fileID: 737985324}
+  music:
+    Guid:
+      Data1: -928802856
+      Data2: 1175498570
+      Data3: 78926223
+      Data4: 526557434
+    Path: event:/Main Music
+--- !u!114 &1359873100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359873094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -440529093
+      Data2: 1167820298
+      Data3: 1389167027
+      Data4: 480781408
+    Path: event:/Taunt
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1367233942
 GameObject:
   m_ObjectHideFlags: 0

@@ -144,6 +144,8 @@ GameObject:
   - component: {fileID: 7603750763076636026}
   - component: {fileID: 8818732480524668424}
   - component: {fileID: 8530227513779534819}
+  - component: {fileID: 8182191186869573944}
+  - component: {fileID: 4442406119884285373}
   m_Layer: 0
   m_Name: Funni Robot
   m_TagString: Untagged
@@ -356,3 +358,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 6155820460753865850}
+--- !u!114 &8182191186869573944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7603750763076636028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  Parameter: StopMusic
+  TriggerEvent: 5
+  Value: 1
+--- !u!114 &4442406119884285373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7603750763076636028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: -1845593166
+      Data2: 1171783010
+      Data3: -740064119
+      Data4: -347422165
+    Path: event:/Win Jingle
+  Event: 
+  PlayEvent: 5
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
