@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8625221, g: 0.6043748, b: 0.6107438, a: 1}
+  m_IndirectSpecularColor: {r: 0.8623694, g: 0.6043435, b: 0.6108113, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31673,6 +31673,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1912522707}
     - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1912522708}
@@ -31680,6 +31688,26 @@ PrefabInstance:
       propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 14844234}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1268061724565499735}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DisableMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: playerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636025, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636028, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_Name
       value: Funni Robot
@@ -31967,6 +31995,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}
+--- !u!114 &1268061724565499735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3085010728605476918, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}
+  m_PrefabInstance: {fileID: 1268061724565499734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840749961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4979287ee6f36874dbe87c5d4152dc0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4271989161293154143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3085010728605476873, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}

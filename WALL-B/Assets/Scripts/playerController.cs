@@ -40,6 +40,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private FMODUnity.EventReference deathAudio;
 
     private bool isBigThrust;
+    private bool canMove = true;
     private Vector3 oldPosition;
     private float timeElapsed;
     private int jumpsLeft;
@@ -56,6 +57,11 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (!canMove)
+        {
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -126,5 +132,10 @@ public class playerController : MonoBehaviour
     {
         jumpsLeft = maxJumps;
         thruster.SetActive(true);
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
     }
 }
