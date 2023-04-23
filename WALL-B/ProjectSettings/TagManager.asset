@@ -40,6 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: evenfurtherback
+    uniqueID: 607596135
+    locked: 0
+  - name: furtherbackBackground
+    uniqueID: 3639494051
+    locked: 0
+  - name: furtherBack
+    uniqueID: 487746519
+    locked: 0
   - name: background
     uniqueID: 4166590775
     locked: 0
