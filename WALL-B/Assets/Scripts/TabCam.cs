@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Windows.WebCam;
 
 public class TabCam : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class TabCam : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if(currentPriority == -1)
+            if (currentPriority == -1)
             {
                 currentPriority = 100;
             }
@@ -25,4 +26,6 @@ public class TabCam : MonoBehaviour
             tabCam.Priority = currentPriority;
         }
     }
+
+
 }
