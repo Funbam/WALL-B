@@ -31,6 +31,8 @@ public class playerController : MonoBehaviour
 
     [Header("animators")]
     [SerializeField] private Animator leftAni;
+    [SerializeField] private Animator middleAni;
+    [SerializeField] private Animator rightAni;
 
     [Header("Audio")]
     [SerializeField] private FMODUnity.EventReference thrustAudio;
@@ -67,11 +69,13 @@ public class playerController : MonoBehaviour
             character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightForceThruster.position, ForceMode2D.Impulse);
             Instantiate(thrusterSmoke, rightThruster.position, Random.rotation);
             FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
+            rightAni.SetTrigger("fire");
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
         {
             character.AddForce(character.transform.up * bottomThrusterForce, ForceMode2D.Impulse);
+            middleAni.SetTrigger("fire");
             jumpsLeft--;
             if (jumpsLeft<=0)
             {
