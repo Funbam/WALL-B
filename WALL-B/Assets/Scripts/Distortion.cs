@@ -24,7 +24,8 @@ public class Distortion : MonoBehaviour
         GameObject Player = GameObject.FindGameObjectWithTag("Player");
         if (Player)
         {
-            distortionPercent = 1 - (initialDistance - Vector3.Distance(Player.transform.position, FinalGoal.position) / initialDistance);
+            distortionPercent = 1 - ((initialDistance - Vector3.Distance(Player.transform.position, FinalGoal.position)) / initialDistance);
+            Debug.Log(distortionPercent);
         }
     }
 }
