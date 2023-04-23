@@ -46956,6 +46956,18 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636024, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.23
       objectReference: {fileID: 0}
@@ -47039,6 +47051,26 @@ PrefabInstance:
       propertyPath: togglePanelEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Size.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Size.y
+      value: 12.571085
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2144578
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636026, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7603750763076636028, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
       propertyPath: m_Name
       value: Funni Robot
@@ -47091,8 +47123,54 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[8]
       value: 
       objectReference: {fileID: 181252270}
-    m_RemovedComponents: []
+    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Size.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Size.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603750763076636031, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5ef08dd5d34f694fbbee954c1a932f9, type: 3}
+    m_RemovedComponents:
+    - {fileID: 7603750763076636030, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+--- !u!1 &2139413399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7603750763076636028, guid: c693ad283e4c23444bd26db51f47ecc1, type: 3}
+  m_PrefabInstance: {fileID: 2139413398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2139413400
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139413399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 914789cc1a0716f4caab4b16f1658741, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2141242381
 GameObject:
   m_ObjectHideFlags: 0
