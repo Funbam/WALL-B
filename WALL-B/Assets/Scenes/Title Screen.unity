@@ -9944,12 +9944,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left Arrow - Rotate Right
+  m_text: 'Left Arrow - Left Thruster
 
-    Right  Arrow - Rotate left
+    Right  Arrow - Right Thruster
 
-    Space -
-    Main Thrust
+    Space
+    - Main Thrust
 
     Tab - View Map
 
