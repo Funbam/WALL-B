@@ -6,17 +6,25 @@ public class Distortion : MonoBehaviour
 {
     public float distortionPercent;
     private float initialDistance;
-    [SerializeField] private Transform Player;
     [SerializeField] private Transform FinalGoal;
 
     private void Start()
     {
-        initialDistance = Vector3.Distance(Player.position, FinalGoal.position);
+        GameObject Player = GameObject.FindGameObjectWithTag("Player");
+        if (Player)
+        {
+            initialDistance = Vector3.Distance(Player.transform.position, FinalGoal.position);
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        distortionPercent = 1 - (initialDistance - Vector3.Distance(Player.position, FinalGoal.position)/initialDistance);
+        GameObject Player = GameObject.FindGameObjectWithTag("Player");
+        if (Player)
+        {
+            distortionPercent = 1 - (initialDistance - Vector3.Distance(Player.transform.position, FinalGoal.position) / initialDistance);
+        }
     }
 }

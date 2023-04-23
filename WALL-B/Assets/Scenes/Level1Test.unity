@@ -17543,6 +17543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737985323}
+  - component: {fileID: 737985324}
   m_Layer: 0
   m_Name: end
   m_TagString: Untagged
@@ -17565,6 +17566,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737985324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737985322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09382e97faab36548b0c17616edc48ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distortionPercent: 0
+  FinalGoal: {fileID: 737985323}
 --- !u!1 &744308968
 GameObject:
   m_ObjectHideFlags: 0
@@ -47262,7 +47277,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1836446611704205042, guid: 1628ac5e89131274885b9b550a1cc144, type: 3}
+    - target: {fileID: 0}
       propertyPath: FinalGoal
       value: 
       objectReference: {fileID: 737985323}
