@@ -25,7 +25,6 @@ public class Distortion : MonoBehaviour
         if (Player)
         {
             distortionPercent = ((initialDistance - Vector3.Distance(Player.transform.position, FinalGoal.position)) / initialDistance);
-            Debug.Log(distortionPercent);
         }
     }
 }

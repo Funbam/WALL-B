@@ -11383,7 +11383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: -37.26277}
+  m_AnchoredPosition: {x: -219, y: -10}
   m_SizeDelta: {x: 281.6718, y: 131.3682}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840307542
@@ -11416,12 +11416,25 @@ MonoBehaviour:
     Britney Phan - Background/prop artist (and dewdrop robot thing)
 
 
-    baykidrizzle
-    - Character artist, final cutscene (if finished)
+    zholuarts
+    - Background/prop artist
 
 
-    zholuarts - Background/prop
-    artist'
+    Danny shafik- game designer and level designer
+    (also va)
+
+
+    baykidrizzle - Character artist, final cutscenep artist
+
+
+    Jad-Doggy
+    (Jadon Ark) - Audio
+
+
+    Daniel Nguyen (ArisaKihari) - UI, hazard/obstacle artist
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c54c72c5cfdaeb6439c1e3296cb3e93f, type: 2}
   m_sharedMaterial: {fileID: 8487611116203169970, guid: c54c72c5cfdaeb6439c1e3296cb3e93f, type: 2}

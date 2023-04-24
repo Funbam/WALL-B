@@ -23,11 +23,11 @@ public class audioDistort : MonoBehaviour
         {
             if (TabCam.currentPriority == -1)
             {
-                instance.setParameterByName("ToggleBad", 0);
+                instance.setParameterByName("ToggleBad", 1);
             }
             else
             {
-                instance.setParameterByName("ToggleBad", 1);
+                instance.setParameterByName("ToggleBad", 0);
             }
 
         }

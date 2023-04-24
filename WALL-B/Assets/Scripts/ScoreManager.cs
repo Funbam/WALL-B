@@ -37,6 +37,8 @@ public class ScoreManager : MonoBehaviour
 
     public void SubmitScore()
     {
+        Debug.Log("1");
         submitScoreEvent.Invoke(inputUsername.text, rawScore);
+        Debug.Log("here");
     }
 }
