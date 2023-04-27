@@ -33,7 +33,12 @@ public class RoboSchmoovin : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, RespawnManager.Instance.player.transform.position) <= distanceThreshold)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (!player)
+        {
+            return;
+        }
+        if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) <= distanceThreshold)
         {
             if(currentState == States.waiting && waypointIndex < waypoints.Count-1)
             {
