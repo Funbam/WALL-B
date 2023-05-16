@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.Windows.WebCam;
+using UnityEngine.InputSystem;
 
 public class TabCam : MonoBehaviour
 {
@@ -10,11 +11,18 @@ public class TabCam : MonoBehaviour
     [SerializeField] FMODUnity.EventReference tabIn;
     [SerializeField] FMODUnity.EventReference tabOut;
 
+    public PlayerControls pcs;
+    private InputAction tab;
+
     public int currentPriority = -1;
 
-    public void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        pcs = new PlayerControls();
+
+        tab = pcs.controls.map;
+
+        tab.performed += tabBehavior =>
         {
             if (currentPriority == -1)
             {
@@ -28,7 +36,17 @@ public class TabCam : MonoBehaviour
             }
 
             tabCam.Priority = currentPriority;
-        }
+        };
+    }
+
+        private void OnEnable()
+    {
+        tab.Enable();
+    }
+
+    private void OnDisable()
+    {
+        tab.Disable();
     }
 
 

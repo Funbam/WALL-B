@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playerController : MonoBehaviour
 {
     public int maxJumps;
+
+    public PlayerControls pcs;
+    private InputAction leftThrust;
+    private InputAction rightThrust;
+    private InputAction mainThrust;
+    private InputAction tab;
+    private InputAction esc;
+
+    public pauseGame pg;
 
     [Header("UI")]
     [SerializeField] private GameObject thruster;
@@ -50,6 +60,79 @@ public class playerController : MonoBehaviour
     private float timeElapsed;
     private int jumpsLeft;
 
+    private void Awake()
+    {
+        pcs = new PlayerControls();
+
+        leftThrust = pcs.controls.leftThrust;
+        rightThrust = pcs.controls.rightThrust;
+        mainThrust = pcs.controls.Jump;
+        tab = pcs.controls.map;
+        esc = pcs.controls.pause;
+
+        leftThrust.performed += leftThrustBehavior =>
+        {
+            character.AddForceAtPosition(character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), leftForceThruster.position, ForceMode2D.Impulse);
+            Instantiate(thrusterSmoke, leftThruster.position, Random.rotation);
+            FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
+            leftAni.SetTrigger("fire");
+        };
+
+        esc.performed += escBehavior =>
+        {
+            pg.togglePause();
+        };
+
+        rightThrust.performed += rightThrustBehavior =>
+        {
+            character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightForceThruster.position, ForceMode2D.Impulse);
+            Instantiate(thrusterSmoke, rightThruster.position, Random.rotation);
+            FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
+            rightAni.SetTrigger("fire");
+        };
+
+        mainThrust.performed += mainThrustBehavior =>
+        {
+            if (jumpsLeft > 0)
+            {
+                character.AddForce(character.transform.up * bottomThrusterForce, ForceMode2D.Impulse);
+                middleAni.SetTrigger("fire");
+                jumpsLeft--;
+                if (jumpsLeft <= 0)
+                {
+                    thruster.SetActive(false);
+                }
+                Instantiate(smoke, smokeSpawn.position, Random.rotation);
+                FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
+            }
+        };
+
+        tab.performed += tabBehavior =>
+        {
+            youareHere = !youareHere;
+            isHere.SetActive(youareHere);
+            cameraOverlay.SetActive(youareHere);
+        };
+    }
+
+    private void OnEnable()
+    {
+        leftThrust.Enable();
+        rightThrust.Enable();
+        mainThrust.Enable();
+        tab.Enable();
+        esc.Enable();
+    }
+
+    private void OnDisable()
+    {
+        leftThrust.Disable();
+        rightThrust.Disable();
+        mainThrust.Disable();
+        tab.Disable();
+        esc.Disable();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,49 +152,12 @@ public class playerController : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            character.AddForceAtPosition(character.transform.right * (isBigThrust? bigSideThrusterForce : sideThrusterForce), leftForceThruster.position, ForceMode2D.Impulse);
-            Instantiate(thrusterSmoke, leftThruster.position, Random.rotation);
-            FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
-            leftAni.SetTrigger("fire");
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            character.AddForceAtPosition(-character.transform.right * (isBigThrust ? bigSideThrusterForce : sideThrusterForce), rightForceThruster.position, ForceMode2D.Impulse);
-            Instantiate(thrusterSmoke, rightThruster.position, Random.rotation);
-            FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
-            rightAni.SetTrigger("fire");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
-        {
-            character.AddForce(character.transform.up * bottomThrusterForce, ForceMode2D.Impulse);
-            middleAni.SetTrigger("fire");
-            jumpsLeft--;
-            if (jumpsLeft<=0)
-            {
-                thruster.SetActive(false);
-            }
-            Instantiate(smoke, smokeSpawn.position, Random.rotation);
-            FMODUnity.RuntimeManager.PlayOneShot(thrustAudio);
-        }
-
         if(Input.GetKeyDown(KeyCode.R))
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             FMODUnity.RuntimeManager.PlayOneShot(deathAudio);
             RespawnManager.Instance.StartRespawn();
-        }
-
-        //Do tab cam
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            youareHere = !youareHere;
-            isHere.SetActive(youareHere);
-            cameraOverlay.SetActive(youareHere);
         }
 
             //Deal with being stuck
